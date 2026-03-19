@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeChat - Connect with Legends</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="theme-warm">
+
+
+    <!-- Character Selection Page -->
+    <section id="selection" class="page-section">
+        <div class="container">
+            <header class="section-header">
+                <span class="badge">Selection</span>
+                <h2>Choose Your <span class="gradient-text">Companion</span></h2>
+                <p>Select a character to start your personalized AI chat experience.</p>
+            </header>
+
+            <div class="character-grid">
+                <!-- Naruto Uzumaki -->
+                <a href="#chat-naruto" class="character-card">
+                    <div class="card-glow"></div>
+                    <div class="card-avatar">
+                        <div class="avatar-img" style="background-color: #FF9F1C;">
+                            <img src="naruto.jpg" alt="Naruto" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <h3>Naruto Uzumaki</h3>
+                    <p>Energetic, brave, never gives up</p>
+                    <span class="card-btn">Chat Now</span>
+                </a>
+
+                <!-- Monkey D. Luffy -->
+                <a href="#chat-luffy" class="character-card">
+                    <div class="card-glow"></div>
+                    <div class="card-avatar">
+                        <div class="avatar-img" style="background-color: #E71D36;">
+                            <img src="luffy.jpg" alt="Luffy" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <h3>Monkey D. Luffy</h3>
+                    <p>Fun-loving, adventurous, determined</p>
+                    <span class="card-btn">Chat Now</span>
+                </a>
+
+                <!-- Satoru Gojo -->
+                <a href="#chat-gojo" class="character-card">
+                    <div class="card-glow"></div>
+                    <div class="card-avatar">
+                        <div class="avatar-img" style="background-color: #A5A5A5;">
+                            <img src="gojo.jpg" alt="Gojo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <h3>Satoru Gojo</h3>
+                    <p>Confident, playful, overpowered</p>
+                    <span class="card-btn">Chat Now</span>
+                </a>
+
+                <!-- Son Goku -->
+                <a href="#chat-goku" class="character-card">
+                    <div class="card-glow"></div>
+                    <div class="card-avatar">
+                        <div class="avatar-img" style="background-color: #FB5607;">
+                            <img src="goku.jpg" alt="Goku" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <h3>Son Goku</h3>
+                    <p>Cheerful, heroic, strong-willed</p>
+                    <span class="card-btn">Chat Now</span>
+                </a>
+
+                <!-- Ichigo Kurosaki -->
+                <a href="#chat-ichigo" class="character-card">
+                    <div class="card-glow"></div>
+                    <div class="card-avatar">
+                        <div class="avatar-img" style="background-color: #FF7000;">
+                            <img src="ichigo.jpg" alt="Ichigo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <h3>Ichigo Kurosaki</h3>
+                    <p>Serious, protective, resilient</p>
+                    <span class="card-btn">Chat Now</span>
+                </a>
+
+                <!-- Izuku “Deku” Midoriya -->
+                <a href="#chat-deku" class="character-card">
+                    <div class="card-glow"></div>
+                    <div class="card-avatar">
+                        <div class="avatar-img" style="background-color: #38B000;">
+                            <img src="midoriya.jpg" alt="Midoriya" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <h3>Izuku “Deku” Midoriya</h3>
+                    <p>Kind, intelligent, ambitious</p>
+                    <span class="card-btn">Chat Now</span>
+                </a>
+
+                <!-- Sasuke Uchiha -->
+                <a href="#chat-sasuke" class="character-card">
+                    <div class="card-glow"></div>
+                    <div class="card-avatar">
+                        <div class="avatar-img" style="background-color: #3C096C;">
+                            <img src="sasuke.jpg" alt="Sasuke" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <h3>Sasuke Uchiha</h3>
+                    <p>Calm, calculating, vengeful</p>
+                    <span class="card-btn">Chat Now</span>
+                </a>
+
+                <!-- Kakashi Hatake -->
+                <a href="#chat-kakashi" class="character-card">
+                    <div class="card-glow"></div>
+                    <div class="card-avatar">
+                        <div class="avatar-img" style="background-color: #8ECAE6;">
+                            <img src="kakashi.jpg" alt="Kakashi" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <h3>Kakashi Hatake</h3>
+                    <p>Wise, laid-back, tactical</p>
+                    <span class="card-btn">Chat Now</span>
+                </a>
+
+                <!-- Eren Yeager -->
+                <a href="#chat-eren" class="character-card">
+                    <div class="card-glow"></div>
+                    <div class="card-avatar">
+                        <div class="avatar-img" style="background-color: #606C38;">
+                            <img src="eren.jpg" alt="Eren" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <h3>Eren Yeager</h3>
+                    <p>Determined, passionate, intense</p>
+                    <span class="card-btn">Chat Now</span>
+                </a>
+
+                <!-- Zeke Yeager -->
+                <a href="#chat-zeke" class="character-card">
+                    <div class="card-glow"></div>
+                    <div class="card-avatar">
+                        <div class="avatar-img" style="background-color: #DDA15E;">
+                            <img src="zeke.jpg" alt="Zeke" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <h3>Zeke Yeager</h3>
+                    <p>Strategic, calm, manipulative</p>
+                    <span class="card-btn">Chat Now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Page -->
+    <section id="chat-naruto" class="page-section">
+        <div class="dashboard-container">
+            <header class="dashboard-navbar">
+                <a href="#hero" class="logo">Anime<span>Chat</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#selection">Characters</a></li>
+                    <li><a href="#chat-naruto" class="active">Chat</a></li>
+                </ul>
+            </header>
+            <div class="dashboard-main-grid">
+                <aside class="sidebar-left">
+                    <nav class="nav-strip"><div class="nav-icon active">💬</div><div class="nav-icon">👥</div><div class="nav-icon">⚙️</div></nav>
+                    <div class="sidebar-content">
+                        <header class="sidebar-header"><a href="#selection" class="back-btn-pill">← Chat</a></header>
+                        <div class="character-profile-minor">
+                            <div class="avatar-pill"><img src="naruto.jpg" alt="Naruto"></div>
+                            <h3>Naruto</h3>
+                            <span class="tagline-pill">Energetic</span>
+                        </div>
+                        <div class="chat-list">
+                            <div class="section-label">Recent Chats</div>
+                            <div class="chat-item active">
+                                <div class="item-avatar"><img src="naruto.jpg" alt="Naruto"></div>
+                                <div class="item-info"><h3>Naruto</h3><p>Believe it!</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="chat-panel">
+                    <header class="panel-header">
+                        <div class="header-main">
+                            <h2>Naruto Uzumaki</h2>
+                            <div class="header-tabs">
+                                <button class="tab-pill active">Messages</button>
+                                <button class="tab-pill">Profile</button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="chat-thread">
+                        <div class="message message-left"><div class="msg-avatar-small"><img src="naruto.jpg" alt="Naruto"></div><div class="msg-wrapper"><div class="msg-bubble">Hey! Ready to train? Believe it!</div></div></div>
+                    </div>
+                    <footer class="panel-input"><div class="input-bar-pill"><input type="text" placeholder="Message Naruto..."><button class="send-btn-pill">↑</button></div></footer>
+                </main>
+                <aside class="sidebar-right"><div class="info-card">
+                    <div class="info-avatar-large"><img src="naruto.jpg" alt="Naruto"></div>
+                    <h2>Naruto</h2>
+                    <p class="info-desc">7th Hokage, ninja of the leaf. Energetic, brave, and never gives up.</p>
+                </div></aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero" class="page-section">
+        <div class="hero-glow primary"></div>
+        <div class="hero-glow accent"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">AI-Powered Anime Companions</span>
+                <h1>Chat with Your Favorite <span class="gradient-text">Anime Characters</span></h1>
+                <p>Experience immersive conversations with legends from your favorite series. Our advanced AI captures
+                    the heart and soul of every character.</p>
+                <div class="hero-actions">
+                    <a href="#selection" class="btn btn-primary glow-btn">Select Character</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">50+</span>
+                        <span class="stat-label">Series</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">1k+</span>
+                        <span class="stat-label">Characters</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-character">
+                    <div class="avatar-large">
+                        <div class="avatar-inner">✨</div>
+                        <div class="avatar-ring"></div>
+                    </div>
+                    <div class="chat-hint">"Konnichiwa!"</div>
+                </div>
+            </div>
+        </div>
+    <!-- Luffy Dashboard -->
+    <section id="chat-luffy" class="page-section">
+        <div class="dashboard-container">
+            <header class="dashboard-navbar">
+                <a href="#hero" class="logo">Anime<span>Chat</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#selection">Characters</a></li>
+                    <li><a href="#chat-luffy" class="active">Chat</a></li>
+                </ul>
+            </header>
+            <div class="dashboard-main-grid">
+                <aside class="sidebar-left">
+                    <nav class="nav-strip"><div class="nav-icon active">💬</div><div class="nav-icon">👥</div></nav>
+                    <div class="sidebar-content">
+                        <header class="sidebar-header"><a href="#selection" class="back-btn-pill">← Chat</a></header>
+                        <div class="character-profile-minor">
+                            <div class="avatar-pill"><img src="luffy.jpg" alt="Luffy"></div>
+                            <h3>Luffy</h3>
+                            <span class="tagline-pill">Adventurous</span>
+                        </div>
+                        <div class="chat-list">
+                            <div class="section-label">Recent Chats</div>
+                            <div class="chat-item active">
+                                <div class="item-avatar"><img src="luffy.jpg" alt="Luffy"></div>
+                                <div class="item-info"><h3>Luffy</h3><p>MEAT!!</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="chat-panel">
+                    <header class="panel-header">
+                        <div class="header-main">
+                            <h2>Monkey D. Luffy</h2>
+                            <div class="header-tabs">
+                                <button class="tab-pill active">Messages</button>
+                                <button class="tab-pill">Profile</button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="chat-thread">
+                        <div class="message message-left"><div class="msg-avatar-small"><img src="luffy.jpg" alt="Luffy"></div><div class="msg-wrapper"><div class="msg-bubble">I'm going to be the Pirate King!</div></div></div>
+                    </div>
+                    <footer class="panel-input"><div class="input-bar-pill"><input type="text" placeholder="Message Luffy..."><button class="send-btn-pill">↑</button></div></footer>
+                </main>
+                <aside class="sidebar-right"><div class="info-card">
+                    <div class="info-avatar-large"><img src="luffy.jpg" alt="Luffy"></div>
+                    <h2>Luffy</h2>
+                    <p class="info-desc">Rubber man, captain of the Straw Hats, loves meat and adventure.</p>
+                </div></aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gojo Dashboard -->
+    <section id="chat-gojo" class="page-section">
+        <div class="dashboard-container">
+            <header class="dashboard-navbar">
+                <a href="#hero" class="logo">Anime<span>Chat</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#selection">Characters</a></li>
+                    <li><a href="#chat-gojo" class="active">Chat</a></li>
+                </ul>
+            </header>
+            <div class="dashboard-main-grid">
+                <aside class="sidebar-left">
+                    <nav class="nav-strip"><div class="nav-icon active">💬</div><div class="nav-icon">👥</div></nav>
+                    <div class="sidebar-content">
+                        <header class="sidebar-header"><a href="#selection" class="back-btn-pill">← Chat</a></header>
+                        <div class="character-profile-minor">
+                            <div class="avatar-pill"><img src="gojo.jpg" alt="Gojo"></div>
+                            <h3>Gojo</h3>
+                            <span class="tagline-pill">Confident</span>
+                        </div>
+                        <div class="chat-list">
+                            <div class="section-label">Recent Chats</div>
+                            <div class="chat-item active">
+                                <div class="item-avatar"><img src="gojo.jpg" alt="Gojo"></div>
+                                <div class="item-info"><h3>Gojo</h3><p>Infinite vibes.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="chat-panel">
+                    <header class="panel-header">
+                        <div class="header-main">
+                            <h2>Satoru Gojo</h2>
+                            <div class="header-tabs">
+                                <button class="tab-pill active">Messages</button>
+                                <button class="tab-pill">Profile</button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="chat-thread">
+                        <div class="message message-left"><div class="msg-avatar-small"><img src="gojo.jpg" alt="Gojo"></div><div class="msg-wrapper"><div class="msg-bubble">Don't worry, I'm the strongest.</div></div></div>
+                    </div>
+                    <footer class="panel-input"><div class="input-bar-pill"><input type="text" placeholder="Message Gojo..."><button class="send-btn-pill">↑</button></div></footer>
+                </main>
+                <aside class="sidebar-right"><div class="info-card">
+                    <div class="info-avatar-large"><img src="gojo.jpg" alt="Gojo"></div>
+                    <h2>Gojo</h2>
+                    <p class="info-desc">The strongest sorcerer, playful and confident. Infinite possibilities.</p>
+                </div></aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goku Dashboard -->
+    <section id="chat-goku" class="page-section">
+        <div class="dashboard-container">
+            <header class="dashboard-navbar">
+                <a href="#hero" class="logo">Anime<span>Chat</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#selection">Characters</a></li>
+                    <li><a href="#chat-goku" class="active">Chat</a></li>
+                </ul>
+            </header>
+            <div class="dashboard-main-grid">
+                <aside class="sidebar-left">
+                    <nav class="nav-strip"><div class="nav-icon active">💬</div><div class="nav-icon">👥</div></nav>
+                    <div class="sidebar-content">
+                        <header class="sidebar-header"><a href="#selection" class="back-btn-pill">← Chat</a></header>
+                        <div class="character-profile-minor">
+                            <div class="avatar-pill"><img src="goku.jpg" alt="Goku"></div>
+                            <h3>Goku</h3>
+                            <span class="tagline-pill">Heroic</span>
+                        </div>
+                        <div class="chat-list">
+                            <div class="section-label">Recent Chats</div>
+                            <div class="chat-item active">
+                                <div class="item-avatar"><img src="goku.jpg" alt="Goku"></div>
+                                <div class="item-info"><h3>Goku</h3><p>Let's fight!</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="chat-panel">
+                    <header class="panel-header">
+                        <div class="header-main">
+                            <h2>Son Goku</h2>
+                            <div class="header-tabs">
+                                <button class="tab-pill active">Messages</button>
+                                <button class="tab-pill">Profile</button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="chat-thread">
+                        <div class="message message-left"><div class="msg-avatar-small"><img src="goku.jpg" alt="Goku"></div><div class="msg-wrapper"><div class="msg-bubble">Hey! I heard you're pretty strong! Let's spar!</div></div></div>
+                    </div>
+                    <footer class="panel-input"><div class="input-bar-pill"><input type="text" placeholder="Message Goku..."><button class="send-btn-pill">↑</button></div></footer>
+                </main>
+                <aside class="sidebar-right"><div class="info-card">
+                    <div class="info-avatar-large"><img src="goku.jpg" alt="Goku"></div>
+                    <h2>Goku</h2>
+                    <p class="info-desc">Saiyan warrior from Earth. Loves fighting strong opponents and protecting friends.</p>
+                </div></aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ichigo Dashboard -->
+    <section id="chat-ichigo" class="page-section">
+        <div class="dashboard-container">
+            <header class="dashboard-navbar">
+                <a href="#hero" class="logo">Anime<span>Chat</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#selection">Characters</a></li>
+                    <li><a href="#chat-ichigo" class="active">Chat</a></li>
+                </ul>
+            </header>
+            <div class="dashboard-main-grid">
+                <aside class="sidebar-left">
+                    <nav class="nav-strip"><div class="nav-icon active">💬</div><div class="nav-icon">👥</div></nav>
+                    <div class="sidebar-content">
+                        <header class="sidebar-header"><a href="#selection" class="back-btn-pill">← Chat</a></header>
+                        <div class="character-profile-minor">
+                            <div class="avatar-pill"><img src="ichigo.jpg" alt="Ichigo"></div>
+                            <h3>Ichigo</h3>
+                            <span class="tagline-pill">Protective</span>
+                        </div>
+                        <div class="chat-list">
+                            <div class="section-label">Recent Chats</div>
+                            <div class="chat-item active">
+                                <div class="item-avatar"><img src="ichigo.jpg" alt="Ichigo"></div>
+                                <div class="item-info"><h3>Ichigo</h3><p>Bankai!</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="chat-panel">
+                    <header class="panel-header">
+                        <div class="header-main">
+                            <h2>Ichigo Kurosaki</h2>
+                            <div class="header-tabs">
+                                <button class="tab-pill active">Messages</button>
+                                <button class="tab-pill">Profile</button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="chat-thread">
+                        <div class="message message-left"><div class="msg-avatar-small"><img src="ichigo.jpg" alt="Ichigo"></div><div class="msg-wrapper"><div class="msg-bubble">I'll protect everyone. That's my reason for being a Shinigami.</div></div></div>
+                    </div>
+                    <footer class="panel-input"><div class="input-bar-pill"><input type="text" placeholder="Message Ichigo..."><button class="send-btn-pill">↑</button></div></footer>
+                </main>
+                <aside class="sidebar-right"><div class="info-card">
+                    <div class="info-avatar-large"><img src="ichigo.jpg" alt="Ichigo"></div>
+                    <h2>Ichigo</h2>
+                    <p class="info-desc">A Substitute Shinigami who fights to protect his family and town from Hollows.</p>
+                </div></aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deku Dashboard -->
+    <section id="chat-deku" class="page-section">
+        <div class="dashboard-container">
+            <header class="dashboard-navbar">
+                <a href="#hero" class="logo">Anime<span>Chat</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#selection">Characters</a></li>
+                    <li><a href="#chat-deku" class="active">Chat</a></li>
+                </ul>
+            </header>
+            <div class="dashboard-main-grid">
+                <aside class="sidebar-left">
+                    <nav class="nav-strip"><div class="nav-icon active">💬</div><div class="nav-icon">👥</div></nav>
+                    <div class="sidebar-content">
+                        <header class="sidebar-header"><a href="#selection" class="back-btn-pill">← Chat</a></header>
+                        <div class="character-profile-minor">
+                            <div class="avatar-pill"><img src="midoriya.jpg" alt="Deku"></div>
+                            <h3>Deku</h3>
+                            <span class="tagline-pill">Intelligent</span>
+                        </div>
+                        <div class="chat-list">
+                            <div class="section-label">Recent Chats</div>
+                            <div class="chat-item active">
+                                <div class="item-avatar"><img src="midoriya.jpg" alt="Deku"></div>
+                                <div class="item-info"><h3>Deku</h3><p>I'll be #1!</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="chat-panel">
+                    <header class="panel-header">
+                        <div class="header-main">
+                            <h2>Izuku Midoriya</h2>
+                            <div class="header-tabs">
+                                <button class="tab-pill active">Messages</button>
+                                <button class="tab-pill">Profile</button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="chat-thread">
+                        <div class="message message-left"><div class="msg-avatar-small"><img src="midoriya.jpg" alt="Deku"></div><div class="msg-wrapper"><div class="msg-bubble">I'll do my best to become the number one hero!</div></div></div>
+                    </div>
+                    <footer class="panel-input"><div class="input-bar-pill"><input type="text" placeholder="Message Deku..."><button class="send-btn-pill">↑</button></div></footer>
+                </main>
+                <aside class="sidebar-right"><div class="info-card">
+                    <div class="info-avatar-large"><img src="midoriya.jpg" alt="Deku"></div>
+                    <h2>Deku</h2>
+                    <p class="info-desc">Born quirkless but inherited One For All. Determined, analytical, and selfless.</p>
+                </div></aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sasuke Dashboard -->
+    <section id="chat-sasuke" class="page-section">
+        <div class="dashboard-container">
+            <header class="dashboard-navbar">
+                <a href="#hero" class="logo">Anime<span>Chat</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#selection">Characters</a></li>
+                    <li><a href="#chat-sasuke" class="active">Chat</a></li>
+                </ul>
+            </header>
+            <div class="dashboard-main-grid">
+                <aside class="sidebar-left">
+                    <nav class="nav-strip"><div class="nav-icon active">💬</div><div class="nav-icon">👥</div></nav>
+                    <div class="sidebar-content">
+                        <header class="sidebar-header"><a href="#selection" class="back-btn-pill">← Chat</a></header>
+                        <div class="character-profile-minor">
+                            <div class="avatar-pill"><img src="sasuke.jpg" alt="Sasuke"></div>
+                            <h3>Sasuke</h3>
+                            <span class="tagline-pill">Calculating</span>
+                        </div>
+                        <div class="chat-list">
+                            <div class="section-label">Recent Chats</div>
+                            <div class="chat-item active">
+                                <div class="item-avatar"><img src="sasuke.jpg" alt="Sasuke"></div>
+                                <div class="item-info"><h3>Sasuke</h3><p>Hn...</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="chat-panel">
+                    <header class="panel-header">
+                        <div class="header-main">
+                            <h2>Sasuke Uchiha</h2>
+                            <div class="header-tabs">
+                                <button class="tab-pill active">Messages</button>
+                                <button class="tab-pill">Profile</button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="chat-thread">
+                        <div class="message message-left"><div class="msg-avatar-small"><img src="sasuke.jpg" alt="Sasuke"></div><div class="msg-wrapper"><div class="msg-bubble">I context only one thing: restoring my clan.</div></div></div>
+                    </div>
+                    <footer class="panel-input"><div class="input-bar-pill"><input type="text" placeholder="Message Sasuke..."><button class="send-btn-pill">↑</button></div></footer>
+                </main>
+                <aside class="sidebar-right"><div class="info-card">
+                    <div class="info-avatar-large"><img src="sasuke.jpg" alt="Sasuke"></div>
+                    <h2>Sasuke</h2>
+                    <p class="info-desc">Last of the Uchiha. Driven by revenge and power. Calm, calculating, and elite.</p>
+                </div></aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kakashi Dashboard -->
+    <section id="chat-kakashi" class="page-section">
+        <div class="dashboard-container">
+            <header class="dashboard-navbar">
+                <a href="#hero" class="logo">Anime<span>Chat</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#selection">Characters</a></li>
+                    <li><a href="#chat-kakashi" class="active">Chat</a></li>
+                </ul>
+            </header>
+            <div class="dashboard-main-grid">
+                <aside class="sidebar-left">
+                    <nav class="nav-strip"><div class="nav-icon active">💬</div><div class="nav-icon">👥</div></nav>
+                    <div class="sidebar-content">
+                        <header class="sidebar-header"><a href="#selection" class="back-btn-pill">← Chat</a></header>
+                        <div class="character-profile-minor">
+                            <div class="avatar-pill"><img src="kakashi.jpg" alt="Kakashi"></div>
+                            <h3>Kakashi</h3>
+                            <span class="tagline-pill">Wise</span>
+                        </div>
+                        <div class="chat-list">
+                            <div class="section-label">Recent Chats</div>
+                            <div class="chat-item active">
+                                <div class="item-avatar"><img src="kakashi.jpg" alt="Kakashi"></div>
+                                <div class="item-info"><h3>Kakashi</h3><p>Late again...</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="chat-panel">
+                    <header class="panel-header">
+                        <div class="header-main">
+                            <h2>Kakashi Hatake</h2>
+                            <div class="header-tabs">
+                                <button class="tab-pill active">Messages</button>
+                                <button class="tab-pill">Profile</button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="chat-thread">
+                        <div class="message message-left"><div class="msg-avatar-small"><img src="kakashi.jpg" alt="Kakashi"></div><div class="msg-wrapper"><div class="msg-bubble">Sorry I'm late, I got lost on the path of life.</div></div></div>
+                    </div>
+                    <footer class="panel-input"><div class="input-bar-pill"><input type="text" placeholder="Message Kakashi..."><button class="send-btn-pill">↑</button></div></footer>
+                </main>
+                <aside class="sidebar-right"><div class="info-card">
+                    <div class="info-avatar-large"><img src="kakashi.jpg" alt="Kakashi"></div>
+                    <h2>Kakashi</h2>
+                    <p class="info-desc">The Copy Ninja. Expert strategist, elite shinobi, and a bit of a mystery.</p>
+                </div></aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eren Dashboard -->
+    <section id="chat-eren" class="page-section">
+        <div class="dashboard-container">
+            <header class="dashboard-navbar">
+                <a href="#hero" class="logo">Anime<span>Chat</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#selection">Characters</a></li>
+                    <li><a href="#chat-eren" class="active">Chat</a></li>
+                </ul>
+            </header>
+            <div class="dashboard-main-grid">
+                <aside class="sidebar-left">
+                    <nav class="nav-strip"><div class="nav-icon active">💬</div><div class="nav-icon">👥</div></nav>
+                    <div class="sidebar-content">
+                        <header class="sidebar-header"><a href="#selection" class="back-btn-pill">← Chat</a></header>
+                        <div class="character-profile-minor">
+                            <div class="avatar-pill"><img src="eren.jpg" alt="Eren"></div>
+                            <h3>Eren</h3>
+                            <span class="tagline-pill">Passionate</span>
+                        </div>
+                        <div class="chat-list">
+                            <div class="section-label">Recent Chats</div>
+                            <div class="chat-item active">
+                                <div class="item-avatar"><img src="eren.jpg" alt="Eren"></div>
+                                <div class="item-info"><h3>Eren</h3><p>Freedom...</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="chat-panel">
+                    <header class="panel-header">
+                        <div class="header-main">
+                            <h2>Eren Yeager</h2>
+                            <div class="header-tabs">
+                                <button class="tab-pill active">Messages</button>
+                                <button class="tab-pill">Profile</button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="chat-thread">
+                        <div class="message message-left"><div class="msg-avatar-small"><img src="eren.jpg" alt="Eren"></div><div class="msg-wrapper"><div class="msg-bubble">I will exterminate them all... every single one!</div></div></div>
+                    </div>
+                    <footer class="panel-input"><div class="input-bar-pill"><input type="text" placeholder="Message Eren..."><button class="send-btn-pill">↑</button></div></footer>
+                </main>
+                <aside class="sidebar-right"><div class="info-card">
+                    <div class="info-avatar-large"><img src="eren.jpg" alt="Eren"></div>
+                    <h2>Eren</h2>
+                    <p class="info-desc">Driven by a burning desire for freedom. Will stop at nothing to protect his people.</p>
+                </div></aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zeke Dashboard -->
+    <section id="chat-zeke" class="page-section">
+        <div class="dashboard-container">
+            <header class="dashboard-navbar">
+                <a href="#hero" class="logo">Anime<span>Chat</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#selection">Characters</a></li>
+                    <li><a href="#chat-zeke" class="active">Chat</a></li>
+                </ul>
+            </header>
+            <div class="dashboard-main-grid">
+                <aside class="sidebar-left">
+                    <nav class="nav-strip"><div class="nav-icon active">💬</div><div class="nav-icon">👥</div></nav>
+                    <div class="sidebar-content">
+                        <header class="sidebar-header"><a href="#selection" class="back-btn-pill">← Chat</a></header>
+                        <div class="character-profile-minor">
+                            <div class="avatar-pill"><img src="zeke.jpg" alt="Zeke"></div>
+                            <h3>Zeke</h3>
+                            <span class="tagline-pill">Strategic</span>
+                        </div>
+                        <div class="chat-list">
+                            <div class="section-label">Recent Chats</div>
+                            <div class="chat-item active">
+                                <div class="item-avatar"><img src="zeke.jpg" alt="Zeke"></div>
+                                <div class="item-info"><h3>Zeke</h3><p>The plan...</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="chat-panel">
+                    <header class="panel-header">
+                        <div class="header-main">
+                            <h2>Zeke Yeager</h2>
+                            <div class="header-tabs">
+                                <button class="tab-pill active">Messages</button>
+                                <button class="tab-pill">Profile</button>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="chat-thread">
+                        <div class="message message-left"><div class="msg-avatar-small"><img src="zeke.jpg" alt="Zeke"></div><div class="msg-wrapper"><div class="msg-bubble">Everything is part of my plan. For the restoration of Eldia.</div></div></div>
+                    </div>
+                    <footer class="panel-input"><div class="input-bar-pill"><input type="text" placeholder="Message Zeke..."><button class="send-btn-pill">↑</button></div></footer>
+                </main>
+                <aside class="sidebar-right"><div class="info-card">
+                    <div class="info-avatar-large"><img src="zeke.jpg" alt="Zeke"></div>
+                    <h2>Zeke</h2>
+                    <p class="info-desc">The Beast Titan. A master strategist with a complex biological plan for his people.</p>
+                </div></aside>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="logo">Anime<span>Chat</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#selection">Characters</a></li>
+                <li><a href="#chat-naruto">Chat</a></li>
+            </ul>
+            <a href="#selection" class="nav-btn">Start Chatting</a>
+        </div>
+    </nav>
+    <script src="script.js" defer></script>
+</body>
+</html>
